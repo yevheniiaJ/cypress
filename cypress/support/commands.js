@@ -18,7 +18,9 @@
 //
 //
 // -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
+Cypress.Commands.add('openSite', (userName, password) => { 
+    cy.visit('https://www.amazon.com/');
+ })
 //
 //
 // -- This will overwrite an existing command --
