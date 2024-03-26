@@ -3,9 +3,8 @@
 describe('Five tests', () => {
 
   beforeEach(() => {
-   cy.openSite();
-   })
-
+    cy.openSite();
+  })
 
   it('Search', () => {
     cy.get('#twotabsearchtextbox').type('chocolate');
@@ -28,7 +27,7 @@ describe('Five tests', () => {
     cy.get(`#nav-cart-count`).click();
     cy.get(`#a-autoid-1`).should('be.visible')
   });
-  
+
   it('deliver to Ukraine , check zip code', () => {
     cy.get(`#nav-global-location-popover-link`).click();
     cy.get("#GLUXZipUpdate").click();
